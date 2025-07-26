@@ -28,7 +28,7 @@ public class LocationService {
      */
     public Location createLocation(Location location){
         // Now we want to save the location in the location table
-        // That means we require location repository whihc will save location in the location table
+        // That means we require location repository which will save location in the location table
         location.setCreatedAt(LocalDateTime.now());
         location.setUpdatedAt(LocalDateTime.now());
         return locationRepository.save(location);
